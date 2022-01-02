@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Icon</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body >
+
+    <div class="container text-center" style="padding-top: 300px;">
+        <div id="score">
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="data:image/png;base64,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" v-on:click="b_add(10,0)" style="width:100px;height:100px;">
+                <p> like count is {{count[0]}} </p>
+            </button>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="https://www.lovecalculator.com/dist/images/lovecalculator-heart.svg" v-on:click="b_add(20,1)" style="width:100px;height:100px;">
+                <p> love count is {{count[1]}} </p>
+           </button>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgtBC3IM62XrCkKNjwL5UZpN_c8Uc6u_ZFQ&usqp=CAU" v-on:click="b_add(25,2)" style="width:100px;height:100px; ">
+                <p> laugh count is {{count[2]}} </p>
+            </button>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="https://media.istockphoto.com/vectors/wow-vector-id915255348?k=20&m=915255348&s=170667a&w=0&h=ZlWM9rGxH6m6tX3hyyh-cumMsvIAPnk55v6250rUImY= " v-on:click="b_add(30,3)" style="width:100px;height:100px; ">
+                <p> wow count is {{count[3]}} </p>
+            </button>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8Ggq4YWpg3wzjsm1l_yenSVZfIia3VnFDw&usqp=CAU " v-on:click="b_add(-15,4)" style="width:100px;height:100px; ">
+                <p> sad count is {{count[4]}} </p>
+            </button>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSaVgrhqRpysQWVAK-kiAHti-g0Y5z-DNhw&usqp=CAU " v-on:click="b_add(-50,5)" style="width:100px;height:100px; ">
+                <p> angry count is {{count[5]}} </p>
+            </button>
+
+            <h1><b>Your Score is : {{point}} </b></h1>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var example1 = new Vue({
+        el: '#score',
+        data: {
+            point: 0,
+            count: [0, 0, 0, 0, 0, 0],
+        },
+        methods: {
+            b_add: function(i, i2) {
+                this.point += i;
+                this.count[i2] += 1;
+            },
+
+            b_sub: function(i, i2) {
+                this.point -= i;
+                this.count[i2] += 1;
+            }
+
+        }
+
+
+
+    })
+</script>
